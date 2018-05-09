@@ -1,0 +1,130 @@
+
+
+html{
+  font-family: 'Ubuntu', sans-serif;
+   cursor: default;
+}
+body{
+  
+  color: white;
+  background-image: radial-gradient(ellipse farthest-corner at center, #07306E 0%, #002C42 100%);
+
+  line-height: 1.5;
+
+}
+
+h3{
+  letter-spacing: 3px;
+  font-size: 18px;
+  text-shadow: 1px 1px #FFFFFF;
+  
+}
+
+#app{
+  display: flex;
+
+  
+  
+  
+}
+#click{
+  background-color:re
+  
+}
+code{
+  background-color: #a58b13;
+
+}
+
+h2{
+ 
+  font-size: 24px;
+  text-shadow: 1px 1px #FFFFFF;
+}
+section{
+  background-color: rgba(25,25,25,0.5);
+  padding: 7.5%;
+  padding-top: 2.5%;
+}
+p{
+  font-size: 14px;
+}
+
+
+a{
+  color: white;
+  margin-left: 15%;
+  font-size: 18px;
+  
+
+}
+
+a:visited{
+  color: white;
+}
+
+code{
+  transition: 0.34s all ease-in-out;
+}
+
+code:hover{
+  background-color: seagreen;
+
+}
+
+#modal-container{
+
+  transition: 0.83s all ease-in-out;
+  padding: 10px;
+
+}
+
+#modal-container:hover{
+  transform: scale(1.05);
+  
+}
+
+#modal-close{
+  padding: 15px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  transition: 0.23s all ease-in-out;
+  font-size: 20px;
+}
+
+
+#modal-close:hover{
+  background-color: seagreen;
+  transform: scale(1.05);
+  
+}
+
+
+#modal-content{
+ transition: 0.75s all ease-in-out; 
+}
+
+
+
+#icon-home{
+  border: 1px solid white;
+  display: inline-block;
+  float: right;
+  box-sizing: border-box;
+  padding-right: 3px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 15px;
+  
+  -webkit-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+  transition: 0.45s all ease-in-out;
+}
+
+#icon-home:hover{
+  transform: scale(1.05);
+  
+  
+}

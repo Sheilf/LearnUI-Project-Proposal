@@ -1,0 +1,80 @@
+
+
+var ModalStyle = {
+  position: 'absolute',
+  padding: 10,
+  top: 25,
+  left: 25,
+    opacity: 0,
+  visibility: 'hidden',
+  width: 200,
+  backgroundColor: 'rgba(53, 35, 101, 0.98)'
+  
+  
+}
+
+class OpenModal extends React.Component{
+  
+  constructor(props){
+    super(props);
+    this.state ={
+      
+      modalIsClicked: false,    
+      
+      modalCloseActive: "x"
+    }
+    
+  
+  }
+  
+
+  
+  render(){
+    
+      return(
+        
+        <section>
+          <div id="clicker">
+          <h3>
+            Sheilfer Zepeda Lopez - Let's Learn & LearnUI - Build schools with math 
+          </h3>
+          <p> 
+            I'm a student at Northeastern Illinois University. I'm interested in <code className="alert-clicks" id="1">education technology</code>. I'm specifically interested in education AI, <code className="alert-clicks" id="2">school infrastructure and school building</code>, and math learning. If the project or subject interests you, then let's work on some edutech ideas. Email me at eduprojectsil@gmail.com.
+          </p>
+
+          <h2>What this project is</h2>
+
+          <p> 
+            As I attend school I'm applying some knowledge(HCI, web development, database management, and so on) and teaching myself some ReactJS skills. I'm working on a math module that readily assists users in a myriad of ways with <code className="alert-clicks" id="3" > instanced data</code>. On a question by question basis a student will be equipped with cheat sheets, notes, dynamic hints, forums, animations, and videos in order to <code id="4" className="alert-clicks">find ways to conceptualize and visualize the topics</code>.
+          </p>
+
+          <p>
+            I think with the advent of these new era high speed technologies, we can find creative ways to <code id="5" className="alert-clicks">motivate and connect schools besides hosting online platforms</code>. The math module will require a subscription fee that returns part of the fee depending on user engagement. <code id="6"className="alert-clicks">The student earns participation points as usual but they will be delivered as "coins" and at the end of the semester, these coins will return a fixed amount of the user's subscription to school infrastructure missions and to personalize one's account</code>. I want to connect students in a more active and realistic way that respects and rewards the effort and challenge of being a student rather than to undermine their important role in our society as an inexperienced individual.
+          </p>
+
+          <p>Subscription would be something like 5 or 7  dollars a month, and with whatever baseline minimum return back to school building missions. Varying levels of engagement would result in some maximum you can return. Say for example, it costs 7 dollars a month and you're guarunteed a baseline minimum of 25% returned and some maximum earned (50, 75, 85%, 95% whatever number ends up working out).</p>
+
+          <p> It is set up this way because school and student systems vary greatly in their academic results. I want to create a small net for students that aren't interested or engaged by mathematics to still be able to contribute in a significant way.</p>
+          </div>
+          
+          <div style={ModalStyle} id="modal-container">
+            
+            <div id="modal-close">{this.state.modalCloseActive}</div>
+            
+            <br /> <br /> <br />
+            <div id="modal-content">{this.state.modalContent} </div>
+            
+          </div>
+        </section>
+        
+        
+
+        )
+  }
+  
+  
+
+}
+
+
+ReactDOM.render(<OpenModal textClicked="none"/>, document.getElementById("app"))
